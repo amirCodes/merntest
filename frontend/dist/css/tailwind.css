@@ -1,0 +1,112 @@
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    a {
+        @apply cursor-pointer;
+    }
+    
+    iframe::-webkit-scrollbar {
+        border: 0px!important;
+        width: 0!important;
+        display: none!important;
+        scrollbar-width: none;
+    }
+    
+    #iFrameId::-webkit-scrollbar {
+        border: 0px!important;
+        width: 0!important;
+        display: none!important;
+        scrollbar-width: none;
+    }
+    
+    #iFrameId::-webkit-scrollbar-button:start:decrement,
+    #iFrameId::-webkit-scrollbar-button:end:increment {
+        height: 1px;
+        background-color: transparent;
+    }
+    
+    #iFrameId::-webkit-scrollbar-track-piece {
+        background-color: #3b3b3b;
+        -webkit-border-radius: 1px;
+    }
+    
+    #iFrameId::-webkit-scrollbar-thumb:vertical {
+        height: auto;
+        background-color: transparent;
+        border: 0px!important;
+        width: 0!important;
+        -webkit-border-radius: 1px;
+    }
+    
+    .squares.square1 {
+        animation: 4s infinite;
+        height: 300px;
+        width: 300px;
+        opacity: .5;
+        left: 3%;
+        top: -21%;
+    }
+    
+    .squares.square2 {
+        animation: a 6s infinite;
+        height: 400px;
+        width: 400px px;
+        opacity: .4;
+        right: -5%;
+        top: -12%;
+    }
+    
+    .squares.square3 {
+        animation: a 5s infinite;
+        height: 200px;
+        width: 200px;
+        opacity: .1;
+        left: -5%;
+        bottom: 0;
+    }
+    
+    .squares.square4 {
+        animation: a 10s infinite;
+        height: 100px;
+        width: 100px;
+        opacity: .9;
+        right: 27%;
+        top: 70%;
+    }
+    
+    .squares.square5 {
+        animation: a 6s infinite;
+        height: 250px;
+        width: 250px;
+        opacity: .1;
+        left: 32%;
+        bottom: 29%;
+    }
+    
+    .squares.square6 {
+        animation: a 9s infinite;
+        left: 10%;
+        top: 35%;
+        height: 80px;
+        width: 80px;
+        opacity: .8;
+    }
+    
+    .squares.square7 {
+        animation: 3s infinite;
+        width: auto;
+        height: auto;
+        right: -5%;
+        bottom: 0;
+        opacity: .1;
+    }
+    
+    .squares {
+        animation: a 1s infinite;
+        background: #f59210;
+        background: linear-gradient(0deg, #118316, #06750c);
+        position: absolute;
+        transition: .5s ease-out;
+        overflow: hidden;
+        border-radius: 20%;
+    }
