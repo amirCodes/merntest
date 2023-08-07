@@ -12,6 +12,14 @@
     },
     "author": "amir danish",
     "license": "ISC",
+    "builds": [{
+        "backend": "./server.js",
+        "use": "@vercel/node"
+    }],
+    "routes": [{
+        "frontend/dist": "/(.*)",
+        "destination": "/"
+    }],
     "dependencies": {
         "bcryptjs": "^2.4.3",
         "concurrently": "^8.2.0",
